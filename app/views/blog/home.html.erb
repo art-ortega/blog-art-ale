@@ -1,0 +1,7 @@
+<h1>Welcome to our Blog Page</h1>
+
+<%=link_to "Create Blog",'/newpost'%>
+
+<% @blogs.each do |blog| %>
+<h4><%=link_to blog.title, one_blog_path(blog)%></h4>
+<%end%>
